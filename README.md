@@ -1,9 +1,9 @@
 # Todo-Learning Phase
 Things i have learned
-- [] Setup
-- [] Directives - *ngIf and *ngFor
-- [] Components
-- [] Styles -css
+- [x] Setup
+- [ ] Directives - *ngIf and *ngFor
+- [ ] Components
+- [ ] Styles -css
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.3.
