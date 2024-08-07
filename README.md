@@ -1,7 +1,7 @@
 # Todo-Learning Phase
 Things i have learned
 - [x] Setup
-- [ ] Directives - *ngIf and *ngFor
+- [ ] Directives - *ngIf and *ngFor or @if, @for
 - [ ] Components
 - [ ] Styles -css
 - [ ] Building Angular apps
