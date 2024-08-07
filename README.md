@@ -8,7 +8,8 @@ Things i have learned
 ng build -c production
 npx http-server ./dist/todo/browser/ -o
 
-- [ ] last
+- [ ] Property Binding && Event handling
+- [ ] 
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.3.
