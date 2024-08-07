@@ -9,7 +9,9 @@ ng build -c production
 npx http-server ./dist/todo/browser/ -o
 
 - [ ] Property Binding && Event handling
-- [ ] Component Communication with @Input
+- [ ] Component Communication with @Input && @Output
+- [ ] Deferrable Views
+
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.3.
