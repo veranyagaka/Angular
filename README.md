@@ -4,6 +4,11 @@ Things i have learned
 - [ ] Directives - *ngIf and *ngFor
 - [ ] Components
 - [ ] Styles -css
+- [ ] Building Angular apps
+ng build -c production
+npx http-server ./dist/todo/browser/ -o
+
+- [ ] last
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.3.
