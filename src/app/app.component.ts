@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {Item} from "./item"
 import {ItemComponent} from "./item/item.component"
 import { RouterLink,RouterOutlet } from '@angular/router';
 import { ReactiveFormsModule,FormControl,FormGroup ,Validators} from '@angular/forms';
-
+import { UserService } from './app.service';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -13,7 +13,9 @@ import { ReactiveFormsModule,FormControl,FormGroup ,Validators} from '@angular/f
   imports: [CommonModule,ItemComponent,RouterOutlet,RouterLink,ReactiveFormsModule],
 
 })
+
 export class AppComponent {
+  userService =inject(UserService)
   profileForm=new FormGroup({
     name: new FormControl('',Validators.required),
     email: new FormControl('',[Validators.required,Validators.email]),
