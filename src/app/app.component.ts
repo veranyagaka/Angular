@@ -5,7 +5,8 @@ import {ItemComponent} from "./item/item.component"
 import { RouterLink,RouterOutlet } from '@angular/router';
 import { ReactiveFormsModule,FormControl,FormGroup ,Validators} from '@angular/forms';
 import { UserService } from './app.service';
-import { StarPipe } from './app.pipe';
+import { StarPipe } from './star.pipe';
+import {ReversePipe} from './reverse.pipes';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -17,10 +18,11 @@ import { StarPipe } from './app.pipe';
   <h1>Birthday {{birthday| date: "medium" }}</h1>
   <h2>Currency  {{currency | currency}}</h2>
   <h1>Vera {{name | star }}</h1>
+  <h3>Reverse {{name | reverse}}</h3>
   `,
 
   styleUrl: './app.component.css',
-  imports: [CommonModule,ItemComponent,RouterOutlet,RouterLink,ReactiveFormsModule,UpperCasePipe,LowerCasePipe,DecimalPipe, DatePipe, CurrencyPipe,StarPipe],
+  imports: [ReversePipe,CommonModule,ItemComponent,RouterOutlet,RouterLink,ReactiveFormsModule,UpperCasePipe,LowerCasePipe,DecimalPipe, DatePipe, CurrencyPipe,StarPipe],
 
 })
 
