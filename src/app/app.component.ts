@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule,UpperCasePipe, LowerCasePipe} from '@angular/common';
 import {Item} from "./item"
 import {ItemComponent} from "./item/item.component"
 import { RouterLink,RouterOutlet } from '@angular/router';
@@ -9,15 +9,24 @@ import { UserService } from './app.service';
   selector: 'app-root',
   standalone: true,
   //templateUrl: './app.component.html',
-  template: `<p>Car Listing: {{ display }}</p>
+  //template: `<p>Car Listing: {{ display }}</p>`,
+  //template: `{{loudMessage | uppercase  }}`,
+  template: `{{loudMessage | lowercase  }}
+  <p>Number with decimal {{num |number:"3.2-2" }}</p>
+  <h1>Birthday {{birthday| date: "medium" }}</h1>
+  <h2>Currency  {{currency | currency}}</h2>
   `,
 
   styleUrl: './app.component.css',
-  imports: [CommonModule,ItemComponent,RouterOutlet,RouterLink,ReactiveFormsModule],
+  imports: [CommonModule,ItemComponent,RouterOutlet,RouterLink,ReactiveFormsModule,UpperCasePipe,LowerCasePipe],
 
 })
 
 export class AppComponent {
+  currency = 100;
+  birthday = 27/11/1996;
+  num = 1.234;
+  loudMessage = 'Listen Vera';
   display='';
   /*
   //inject-based dependency injection
