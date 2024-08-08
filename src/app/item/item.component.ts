@@ -1,11 +1,11 @@
 import { Component, Input, Output, EventEmitter } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { Item } from "../item";
-
+import { FormsModule } from "@angular/forms";
 @Component({
   selector: 'app-item',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './item.component.html',
   styleUrl: './item.component.css'
 })
@@ -17,5 +17,9 @@ export class ItemComponent {
     if(!description) return;
     this.editable=false;
     this.item.description=description;
+  }
+  favouriteFramework = '';
+  showFramework(){
+    alert(this.favouriteFramework);
   }
 }

@@ -1,3 +1,10 @@
+<button (click)="showFramework()">Show</button>
+<p>Favourite framework {{favouriteFramework}}</p>
+<!--Template driven forms-->
+<label for="framework">Favourite framework
+  <input type="text" id="framework" [(ngModel)]="favouriteFramework"/>
+</label>
+
 <div class="item">
     <input
       [id]="item.description"
