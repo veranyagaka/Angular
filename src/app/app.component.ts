@@ -8,14 +8,21 @@ import { UserService } from './app.service';
 @Component({
   selector: 'app-root',
   standalone: true,
-  templateUrl: './app.component.html',
+  //templateUrl: './app.component.html',
+  template: `<p>Car Listing: {{ display }}</p>
+  `,
+
   styleUrl: './app.component.css',
   imports: [CommonModule,ItemComponent,RouterOutlet,RouterLink,ReactiveFormsModule],
 
 })
 
 export class AppComponent {
+  display='';
   userService =inject(UserService)
+  constructor() {
+    this.display = this.userService.getCars().join(' ⭐️ ');
+}
   profileForm=new FormGroup({
     name: new FormControl('',Validators.required),
     email: new FormControl('',[Validators.required,Validators.email]),
