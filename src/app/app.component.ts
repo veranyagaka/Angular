@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import {Item} from "./item"
 import {ItemComponent} from "./item/item.component"
 import { RouterLink,RouterOutlet } from '@angular/router';
-import { ReactiveFormsModule,FormControl,FormGroup } from '@angular/forms';
+import { ReactiveFormsModule,FormControl,FormGroup ,Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -15,8 +15,8 @@ import { ReactiveFormsModule,FormControl,FormGroup } from '@angular/forms';
 })
 export class AppComponent {
   profileForm=new FormGroup({
-    name: new FormControl(''),
-    email: new FormControl(''),
+    name: new FormControl('',Validators.required),
+    email: new FormControl('',[Validators.required,Validators.email]),
     //password: new FormControl
   })
   handleSubmit(){
