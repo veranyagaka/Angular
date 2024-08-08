@@ -19,9 +19,18 @@ import { UserService } from './app.service';
 
 export class AppComponent {
   display='';
-  userService =inject(UserService)
+  /*
+  //inject-based dependency injection
+
+  userService =inject(UserService);
+
   constructor() {
     this.display = this.userService.getCars().join(' ⭐️ ');
+}
+    */
+//constructor-based dependency injection
+constructor(private userService: UserService) {
+  this.display = this.userService.getCars().join(' ⭐️ ');
 }
   profileForm=new FormGroup({
     name: new FormControl('',Validators.required),
