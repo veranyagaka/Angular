@@ -14,6 +14,7 @@ npx http-server ./dist/todo/browser/ -o
 - [ ] Routing
 - [ ] Forms: Validation, reactive forms, template-driven
 - [ ] Inject service -constructor based and inject based
+- [ ] Pipes - custom pipes
 
 
 
