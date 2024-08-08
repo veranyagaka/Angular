@@ -1,10 +1,11 @@
 import { Component, inject } from '@angular/core';
-import { CommonModule,UpperCasePipe, LowerCasePipe} from '@angular/common';
+import { CommonModule,UpperCasePipe, LowerCasePipe,DecimalPipe, DatePipe, CurrencyPipe} from '@angular/common';
 import {Item} from "./item"
 import {ItemComponent} from "./item/item.component"
 import { RouterLink,RouterOutlet } from '@angular/router';
 import { ReactiveFormsModule,FormControl,FormGroup ,Validators} from '@angular/forms';
 import { UserService } from './app.service';
+import { StarPipe } from './app.pipe';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -15,14 +16,16 @@ import { UserService } from './app.service';
   <p>Number with decimal {{num |number:"3.2-2" }}</p>
   <h1>Birthday {{birthday| date: "medium" }}</h1>
   <h2>Currency  {{currency | currency}}</h2>
+  <h1>Vera {{name | star }}</h1>
   `,
 
   styleUrl: './app.component.css',
-  imports: [CommonModule,ItemComponent,RouterOutlet,RouterLink,ReactiveFormsModule,UpperCasePipe,LowerCasePipe],
+  imports: [CommonModule,ItemComponent,RouterOutlet,RouterLink,ReactiveFormsModule,UpperCasePipe,LowerCasePipe,DecimalPipe, DatePipe, CurrencyPipe,StarPipe],
 
 })
 
 export class AppComponent {
+  name='Nyagaka';
   currency = 100;
   birthday = 27/11/1996;
   num = 1.234;
