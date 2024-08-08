@@ -12,6 +12,7 @@ npx http-server ./dist/todo/browser/ -o
 - [ ] Component Communication with @Input && @Output
 - [ ] Deferrable Views
 - [ ] Routing
+- [ ] Forms: Validation, reactive forms, template-driven
 
 
 
