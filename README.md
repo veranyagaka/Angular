@@ -16,6 +16,7 @@ npx http-server ./dist/todo/browser/ -o
 - [ ] Inject service -constructor based and inject based
 - [ ] Pipes - custom pipes
 - [ ] Tour of Heroes
+- [ ] API calls
 
 
 
