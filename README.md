@@ -18,7 +18,11 @@ npx http-server ./dist/todo/browser/ -o
 - [ ] Tour of Heroes
 - [ ] API calls
 
-
+Django
+- Serializers
+- JWT
+- CSRF
+- CORS
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.3.
 
