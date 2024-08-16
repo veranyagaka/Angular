@@ -14,8 +14,15 @@ npx http-server ./dist/todo/browser/ -o
 - [ ] Routing
 - [ ] Forms: Validation, reactive forms, template-driven
 - [ ] Inject service -constructor based and inject based
+- [ ] Pipes - custom pipes
+- [ ] Tour of Heroes
+- [ ] API calls
 
-
+Django
+- Serializers
+- JWT
+- CSRF
+- CORS
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.3.
 
