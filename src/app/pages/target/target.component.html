@@ -1,0 +1,11 @@
+<p>target works!</p>
+<!-- target.component.html -->
+<div *ngIf="data; else noData">
+    <p>Received Name: {{ data.name }}</p>
+    <p>Received Age: {{ data.age }}</p>
+    <p>All Data: {{ data | json }}</p>
+  </div>
+  <ng-template #noData>
+    <p>No data received.</p>
+  </ng-template>
+  

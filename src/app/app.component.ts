@@ -10,17 +10,17 @@ import {ReversePipe} from './reverse.pipes';
 @Component({
   selector: 'app-root',
   standalone: true,
-  //templateUrl: './app.component.html',
+  templateUrl: './app.component.html',
   //template: `<p>Car Listing: {{ display }}</p>`,
   //template: `{{loudMessage | uppercase  }}`,
-  template: `{{loudMessage | lowercase  }}
+  /*template: `{{loudMessage | lowercase  }}
   <p>Number with decimal {{num |number:"3.2-2" }}</p>
   <h1>Birthday {{birthday| date: "medium" }}</h1>
   <h2>Currency  {{currency | currency}}</h2>
   <h1>Vera {{name | star }}</h1>
   <h3>Reverse {{name | reverse}}</h3>
   `,
-
+*/
   styleUrl: './app.component.css',
   imports: [ReversePipe,CommonModule,ItemComponent,RouterOutlet,RouterLink,ReactiveFormsModule,UpperCasePipe,LowerCasePipe,DecimalPipe, DatePipe, CurrencyPipe,StarPipe],
 

@@ -1,4 +1,6 @@
-<!--Reactive Forms-->
+<router-outlet></router-outlet>
+
+<!--Reactive Forms
 <form [formGroup]="profileForm" (ngSubmit)="handleSubmit()">
   <label>Name
     <input type="text" formControlName="name"/>
@@ -12,9 +14,8 @@
 <p>Name: {{profileForm.value.name}}</p>
 <p>Email: {{profileForm.value.email}}</p>
 
-<router-outlet></router-outlet>
 
-<!--The parameter for the DecimalPipe is called digitsInfo, this parameter uses the format: -->
+The parameter for the DecimalPipe is called digitsInfo, this parameter uses the format:
 <a routerLink="/">Home</a>
 <a routerLink="/item">Item</a>
 <div class="main">
@@ -41,7 +42,7 @@
   id="addItemInput" />
 
 <button class="btn-primary" (click)="addItem(newItem.value)">Add</button>
-<!-- Buttons that show all, still to do, or done items on click -->
+Buttons that show all, still to do, or done items on click
 <div class="btn-wrapper">
   <button
     class="btn btn-menu"
@@ -65,3 +66,4 @@
   </button>
 </div>
 </div>
+-->
