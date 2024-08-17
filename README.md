@@ -17,6 +17,9 @@ npx http-server ./dist/todo/browser/ -o
 - [ ] Pipes - custom pipes
 - [ ] Tour of Heroes
 - [ ] API calls
+- [ ] interfaces
+- [ ] data transfer between components
+- [ ] basic problem solving- arrays, dictionaries etc
 
 Django
 - Serializers
