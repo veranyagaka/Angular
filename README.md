@@ -20,6 +20,7 @@ npx http-server ./dist/todo/browser/ -o
 - [ ] interfaces
 - [ ] data transfer between components
 - [ ] basic problem solving- arrays, dictionaries etc
+- [ ] services
 
 Django
 - Serializers
