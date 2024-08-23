@@ -22,6 +22,11 @@ npx http-server ./dist/todo/browser/ -o
 - [ ] basic problem solving- arrays, dictionaries etc
 - [ ] services
 ## Hero Editor
+Django
+- Serializers
+- JWT
+- CSRF
+- CORS
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.3.
 
