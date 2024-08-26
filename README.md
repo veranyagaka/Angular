@@ -2,7 +2,7 @@
 Things i have learned
 - [x] Setup.
 - [ ] Directives - *ngIf and *ngFor or @if, @for
-- [ ] Components
+- [ ] Components.
 - [ ] Styles -css
 - [ ] Building Angular apps
 ng build -c production
