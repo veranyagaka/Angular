@@ -20,7 +20,8 @@ npx http-server ./dist/todo/browser/ -o
 - [ ] interfaces
 - [ ] data transfer between components
 - [ ] basic problem solving- arrays, dictionaries etc
-- [ ] services
+- [ ] services nullinjectionerror
+- [ ] Persistent state ( cookies, localStorage and sessions)
 ## Hero Editor
 Django
 - Serializers
