@@ -5,6 +5,7 @@ Things i have learned
 - [ ] Components.
 - [ ] Styles -css
 - [ ] Building Angular apps
+- [ ] check if someone is in
 ng build -c production
 npx http-server ./dist/todo/browser/ -o
 
