@@ -24,6 +24,7 @@ npx http-server ./dist/todo/browser/ -o
 - [ ] services nullinjectionerror
 - [ ] Persistent state ( cookies, localStorage and sessions)
 - [ ] Sound
+- [ ] Auth Guard
 ## Hero Editor
 Django
 - Serializers
